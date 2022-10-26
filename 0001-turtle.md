@@ -1,5 +1,7 @@
 # Play with Turtle
 
+* Documentation: https://docs.python.org/3/library/turtle.html
+
 ```python
 from turtle import *
 color('red', 'yellow')
