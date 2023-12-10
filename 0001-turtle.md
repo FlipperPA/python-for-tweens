@@ -35,8 +35,6 @@ done()
 What is 360 divided by 5 (one for each side?)
 
 ```python
-from browser import document
-
 import turtle
 
 for x in range(0, 5):
@@ -49,8 +47,6 @@ turtle.done()
 What happens when we multiple that times two?
 
 ```python
-from browser import document
-
 import turtle
 
 for x in range(0, 5):
