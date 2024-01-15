@@ -55,3 +55,28 @@ for x in range(0, 5):
 
 turtle.done()
 ```
+
+## A Twelve Petal Flower
+
+```python
+import turtle
+
+turtle.title("Twelve Petal Flower")
+turtle.setworldcoordinates(-2000, -2000, 2000, 2000)
+
+
+def draw_flower(x, y, tilt, radius):
+    turtle.up()
+    turtle.goto(x, y)
+    turtle.down()
+    turtle.seth(tilt - 45)
+    turtle.circle(radius, 90)
+    turtle.left(90)
+    turtle.circle(radius, 90)
+
+
+for tilt in range(0, 360, 30):
+    # Loop around all 360 degrees, 30 degrees at a time.
+    # This will create 12 petals, because 360 / 30 == 12.
+    draw_flower(0, 0, tilt, 1000)
+```
